@@ -12,10 +12,13 @@ using GMap.NET.WindowsForms;
 using GMap.NET;
 using GMap.NET.MapProviders;
 
+
 namespace Threats
 {
     public partial class Threats : Form
     {
+        public int Long;
+        public int Lat;
         public Threats()
         {
             InitializeComponent();
@@ -33,6 +36,7 @@ namespace Threats
             PingReply reply = ping.Send ("http://maps.google.com", timeout, buff, ops);
             if (reply.Status == IPStatus.Success)
             {*/
+            gmap.OnMarkerClick += gmap_OnMarkerClick;
                 gmap.DragButton = MouseButtons.Left;
                 gmap.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
                 GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
@@ -47,12 +51,25 @@ namespace Threats
             gmap.FillEmptyTiles = true;
         }
 
+        void gmap_OnMarkerClick(GMapMarker item, MouseEventArgs e)
+        {
+            //throw new NotImplementedException();
+            //MessageBox.Show("l");
+        }
+
+        
         private void tsbAdd_Click(object sender, EventArgs e)
         {
-            
             Add frmAdd = new Add();
             frmAdd.Show();
-            
+            if (frmAdd.set)
+            {
+                GMapOverlay markersOverlay = new GMapOverlay("markers");
+                
+                GMarkerGoogle marker = new GMarkerGoogle(new PointLatLng(frmAdd.Lat, frmAdd.Long), GMarkerGoogleType.blue_pushpin);
+                gmap.Overlays.Add(markersOverlay);
+                markersOverlay.Markers.Add(marker);
+            }
         }
         
     }

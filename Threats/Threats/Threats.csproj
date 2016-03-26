@@ -167,16 +167,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1.sdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataBase_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DataBase.mdf</DependentUpon>
-    </Content>
     <Content Include="GMap.NET.Core.dll" />
     <Content Include="GMap.NET.WindowsForms.dll" />
     <Content Include="Packages\GMap.NET.Core.dll" />
