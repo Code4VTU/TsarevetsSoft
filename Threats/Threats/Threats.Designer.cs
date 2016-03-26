@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Threats));
             this.gmap = new GMap.NET.WindowsForms.GMapControl();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.Filip = new System.Windows.Forms.CheckBox();
             this.tsbAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +71,16 @@
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // Filip
+            // 
+            this.Filip.AutoSize = true;
+            this.Filip.Location = new System.Drawing.Point(346, 42);
+            this.Filip.Name = "Filip";
+            this.Filip.Size = new System.Drawing.Size(44, 17);
+            this.Filip.TabIndex = 2;
+            this.Filip.Text = "Filip";
+            this.Filip.UseVisualStyleBackColor = true;
+            // 
             // tsbAdd
             // 
             this.tsbAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -86,6 +97,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(928, 393);
+            this.Controls.Add(this.Filip);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.gmap);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -105,6 +117,7 @@
         private GMap.NET.WindowsForms.GMapControl gmap;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbAdd;
+        private System.Windows.Forms.CheckBox Filip;
 
 
     }

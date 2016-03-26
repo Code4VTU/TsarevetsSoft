@@ -49,7 +49,7 @@ namespace Threats
 
         private void tsbAdd_Click(object sender, EventArgs e)
         {
-            ThreatsDBSet db = new ThreatsDBSet();
+            
             Add frmAdd = new Add();
             frmAdd.Show();
             
