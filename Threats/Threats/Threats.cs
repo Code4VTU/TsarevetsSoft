@@ -46,7 +46,14 @@ namespace Threats
             markersOverlay.Markers.Add(marker);
             gmap.FillEmptyTiles = true;
         }
-        
+
+        private void tsbAdd_Click(object sender, EventArgs e)
+        {
+            ThreatsDBSet db = new ThreatsDBSet();
+            Add frmAdd = new Add();
+            frmAdd.Show();
+            
+        }
         
     }
 }

@@ -11,3 +11,8 @@ D:\Projects\Threats\Threats\Threats\bin\Debug\GMap.NET.Core.dll
 D:\Projects\Threats\Threats\Threats\bin\Debug\GMap.NET.WindowsForms.dll
 D:\Projects\Threats\Threats\Threats\bin\Debug\GMap.NET.WindowsPresentation.dll
 D:\Projects\Threats\Threats\Threats\bin\Debug\GMap.NET.WindowsPresentation.xml
+D:\Projects\Threats\Threats\Threats\bin\Debug\Database1.sdf
+D:\Projects\Threats\Threats\Threats\bin\Debug\DataBase.mdf
+D:\Projects\Threats\Threats\Threats\bin\Debug\DataBase_log.ldf
+D:\Projects\Threats\Threats\Threats\bin\Debug\Threats.exe.config
+D:\Projects\Threats\Threats\Threats\obj\Debug\Threats.Add.resources
